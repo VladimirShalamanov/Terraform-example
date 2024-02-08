@@ -8,10 +8,9 @@ terraform {
 
   backend "azurerm" {
     resource_group_name   = "StorageRG"
-    resource_account_name = "taskboardstorage2"
+    storage_account_name = "taskboardstorage2"
     container_name        = "taskboardcontainer"
     key                   = "terraform.tfstate"
-    auth_mode             = "login"
   }
 }
 
