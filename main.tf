@@ -5,6 +5,13 @@ terraform {
       version = "3.90.0"
     }
   }
+
+  backend "azurerm" {
+    resource_group_name   = "StorageRG"
+    resource_account_name = "taskboardstorage2"
+    container_name        = "taskboardcontainer"
+    key                   = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
