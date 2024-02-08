@@ -11,6 +11,7 @@ terraform {
     resource_account_name = "taskboardstorage2"
     container_name        = "taskboardcontainer"
     key                   = "terraform.tfstate"
+    auth_mode             = "login"
   }
 }
 
